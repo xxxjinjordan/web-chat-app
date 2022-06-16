@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>chat-app</title>
+  </head>
+  <body>
+    <!-- 서버가 전달하는 텍스트를 노출하는 영역으로 connect, disconnect시에 SERVER가 updateMessage를 호출 -->
+    <div id="info" class="app__info"></div>
+    <!-- 사용자간의 채팅 텍스트를 노출하는 영역 -->
+    <div id="chatWindow" class="app__window"></div>
+    <div class="app__input__wrap">
+      <!-- 사용자가 채팅 텍스트를 작성할 input -->
+      <input
+        type="text"
+        id="chatInput"
+        class="app__input"
+        autofocus
+        placeholder="대화를 입력해주세요."
+      />
+      <!-- 사용자가 채팅 텍스트를 작성 후 전송할 버튼 -->
+      <button id="chatMessageSendBtn" class="app__button">전송</button>
+    </div>
+
+    <!-- socket.io.js는 서버 실행 시 자동으로 생성되기 때문에 <script> 코드만 추가 -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
