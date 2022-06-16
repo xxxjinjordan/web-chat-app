@@ -149,7 +149,7 @@ socket.emit('이벤트 이름', '서버에게 보낼 데이터 내용');
 - 서버에서는 "이벤트이름"으로 데이터를 받아 처리할 수 있다.
 
 ## 3. 결과 화면
-![채팅](/uploads/aedcb8e207cf67b0ae5330cdecdb5fa8/채팅.png)
+![채팅](https://user-images.githubusercontent.com/48264542/173991425-c3cf24f6-86ae-435f-9c88-1abfd04447d6.png)
 
 #### 채팅 프로그램 flow
 * 입장 시
